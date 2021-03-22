@@ -1,21 +1,54 @@
 # FreelaReport
 
-**TODO: Add description**
+Desafio 2 - Ignite Elixir
 
-## Installation
-
-If [available in Hex](https://hex.pm/docs/publish), the package can be installed
-by adding `freela_report` to your list of dependencies in `mix.exs`:
+Nesse desafio, você deverá gerar um relatório a partir de um arquivo .csv.
 
 ```elixir
-def deps do
-  [
-    {:freela_report, "~> 0.1.0"}
-  ]
-end
+iex> FreelaReport.build("gen_test.csv")
+%{
+  "all_hours" => %{
+    "Cleiton" => 1,
+    "Daniele" => 12,
+    "Danilo" => 0,
+    "Diego" => 0,
+    "Giuliano" => 9,
+    "Jakeliny" => 14,
+    "Joseph" => 3,
+    "Mayk" => 5,
+    "Rafael" => 0,
+    "Vinicius" => 0
+  },
+  "hours_per_month" => %{
+    "Cleiton" => 6,
+    "Daniele" => 88,
+    "Danilo" => 0,
+    "Diego" => 0,
+    "Giuliano" => 18,
+    "Jakeliny" => 74,
+    "Joseph" => 9,
+    "Mayk" => 60,
+    "Rafael" => 0,
+    "Vinicius" => 0
+  },
+  "hours_per_year" => %{
+    "Cleiton" => 2020,
+    "Daniele" => 24206,
+    "Danilo" => 0,
+    "Diego" => 0,
+    "Giuliano" => 18165,
+    "Jakeliny" => 28250,
+    "Joseph" => 6051,
+    "Mayk" => 10093,
+    "Rafael" => 0,
+    "Vinicius" => 0
+  }
+}
 ```
 
-Documentation can be generated with [ExDoc](https://github.com/elixir-lang/ex_doc)
-and published on [HexDocs](https://hexdocs.pm). Once published, the docs can
-be found at [https://hexdocs.pm/freela_report](https://hexdocs.pm/freela_report).
+## Todo List
 
+- [x] Criar parser
+- [x] Criar função de somar o tempo de todos os freelancers
+- [x] Testes
+- [x] Refatorar bugs
