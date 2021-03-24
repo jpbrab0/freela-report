@@ -45,10 +45,17 @@ iex> FreelaReport.build("gen_test.csv")
   }
 }
 ```
+E também com muitos arquivos:
+
+```bash
+iex> FreelaReport.build_parallel(["report_1.csv", "report_2.csv", "report_3.csv"])
+```
 
 ## Todo List
 
-- [x] Criar parser
-- [x] Criar função de somar o tempo de todos os freelancers
-- [x] Testes
-- [x] Refatorar bugs
+- [x] Criar parser.
+- [x] Criar função de somar o tempo de todos os freelancers.
+- [x] Testes.
+- [x] Refatorar bugs.
+- [x] Adicionar versão paralela do projeto.
+- [x] Adicionar testes da versão paralela.
